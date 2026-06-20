@@ -1,0 +1,94 @@
+/* Kotobito wireframe v2 — grayscale */
+*{box-sizing:border-box;}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:#333;background:#f4f4f4;line-height:1.7;font-size:14px;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px;}
+
+/* page hierarchy banner */
+.crumb{background:#e3e3e3;color:#666;font-size:12px;letter-spacing:.04em;padding:6px 0;border-bottom:1px solid #d2d2d2;}
+.crumb .wrap{display:flex;justify-content:space-between;}
+
+/* header */
+.hd{background:#fff;border-bottom:1px solid #d2d2d2;}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;}
+.hd .logo{font-weight:800;font-size:18px;letter-spacing:.04em;}
+.hd nav a{font-size:13px;color:#555;margin-left:18px;}
+.hd nav a.cta{border:1px solid #999;border-radius:4px;padding:5px 12px;}
+
+/* sections */
+main{background:#fff;}
+section{padding:72px 0;border-bottom:1px solid #e2e2e2;}
+section:last-child{border-bottom:0;}
+.lbl{font-size:11px;font-weight:700;letter-spacing:.14em;color:#999;text-transform:uppercase;margin:0 0 12px;}
+h1{font-size:26px;margin:0 0 10px;font-weight:800;color:#444;}
+h2{font-size:19px;margin:0 0 10px;font-weight:800;color:#444;}
+h3{font-size:14px;margin:0 0 4px;font-weight:700;color:#555;}
+.ph-line{color:#aaa;}
+.ph-line.sm{font-size:12px;}
+
+/* placeholder boxes */
+.box{background:repeating-linear-gradient(45deg,#ededed,#ededed 10px,#e4e4e4 10px,#e4e4e4 20px);border:1px dashed #bcbcbc;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#9a9a9a;font-size:12px;min-height:140px;text-align:center;}
+.box.kv{min-height:300px;}
+.box.sm{min-height:110px;}
+
+/* grids */
+.grid{display:grid;gap:14px;}
+.g4{grid-template-columns:repeat(4,1fr);}
+.g3{grid-template-columns:repeat(3,1fr);}
+.g2{grid-template-columns:1fr 1fr;}
+@media(max-width:780px){.g4,.g3,.g2{grid-template-columns:1fr;}}
+
+/* cards */
+.card{border:1px solid #ddd;border-radius:4px;overflow:hidden;background:#fff;display:block;}
+a.card{transition:border-color .15s, box-shadow .15s;}
+a.card:hover{border-color:#888;box-shadow:0 2px 10px rgba(0,0,0,.08);}
+.card .box{border:0;border-bottom:1px dashed #bcbcbc;border-radius:0;min-height:100px;}
+.card .body{padding:10px 12px;}
+.tag{display:inline-block;background:#eee;color:#777;font-size:11px;padding:2px 8px;border-radius:3px;margin-bottom:6px;}
+
+/* simple buttons / links */
+.link{display:inline-block;color:#555;font-size:13px;border-bottom:1px solid #999;padding-bottom:1px;margin-top:16px;}
+.btn{display:inline-block;border:1px solid #999;border-radius:4px;padding:8px 16px;font-size:13px;color:#555;margin-top:14px;}
+
+/* news list */
+.nlist .row{display:grid;grid-template-columns:90px 110px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #e6e6e6;font-size:13px;}
+.nlist .row .d{color:#999;}
+@media(max-width:780px){.nlist .row{grid-template-columns:1fr;gap:2px;}}
+
+/* members row */
+.members{display:flex;gap:14px;overflow-x:auto;padding:4px 0 8px;}
+.members .m{flex:0 0 110px;text-align:center;}
+.members .ava{width:110px;height:110px;border-radius:50%;background:repeating-linear-gradient(45deg,#ededed,#ededed 8px,#e4e4e4 8px,#e4e4e4 16px);border:1px dashed #bcbcbc;display:flex;align-items:center;justify-content:center;color:#9a9a9a;font-size:11px;margin:0 auto 6px;}
+.members .m .nm{font-size:12px;color:#666;}
+
+/* filters */
+.filter{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 18px;}
+.filter span{font-size:12px;border:1px solid #ccc;border-radius:999px;padding:4px 12px;color:#888;}
+.filter span.on{background:#666;color:#fff;border-color:#666;}
+
+/* tree / kv list */
+.kv{display:grid;grid-template-columns:100px 1fr;gap:6px 14px;font-size:13px;margin:10px 0;}
+.kv dt{color:#999;}.kv dd{margin:0;color:#555;}
+.cat-h{font-size:13px;font-weight:800;color:#777;margin:22px 0 10px;padding-bottom:5px;border-bottom:2px solid #eee;}
+
+/* concept diagram (kotobito 全体像) */
+.diagram{border:1px dashed #bcbcbc;border-radius:6px;padding:22px;background:#fafafa;}
+.diagram .d-top{border:2px solid #888;border-radius:8px;padding:12px;text-align:center;font-weight:800;color:#555;max-width:440px;margin:0 auto;}
+.diagram small{display:block;font-weight:400;color:#999;font-size:11px;margin-top:2px;}
+.diagram .up{text-align:center;color:#aaa;font-size:18px;line-height:1;margin:6px 0;}
+.diagram .d-mid{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;}
+.diagram .d-side{border:2px solid #888;border-radius:8px;padding:12px;text-align:center;font-weight:800;color:#555;}
+.diagram .d-center{text-align:center;color:#666;font-size:12px;}
+.diagram .circle{border:2px solid #aaa;border-radius:50%;width:96px;height:96px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 4px;font-weight:700;font-size:12px;color:#666;}
+.diagram .cyc{font-size:20px;color:#aaa;}
+.diagram .axis{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin-top:8px;}
+.diagram .axis span{font-size:10px;border:1px solid #ccc;border-radius:999px;padding:1px 7px;color:#888;}
+.diagram .d-cap{text-align:center;color:#999;font-size:11px;margin-top:12px;}
+@media(max-width:780px){.diagram .d-mid{grid-template-columns:1fr;}}
+
+/* contact form fields */
+.field{border:1px solid #ccc;border-radius:4px;padding:10px 12px;color:#aaa;font-size:13px;margin-bottom:8px;background:#fafafa;}
+
+/* footer */
+.ft{background:#fff;border-top:1px solid #d2d2d2;}
+.ft .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:20px 0;color:#999;font-size:12px;}
